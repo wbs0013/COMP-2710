@@ -1,0 +1,159 @@
+Unit Test Case 1: Class - HighScores; Function - Score(int& money, int& intelligence, int& timer)
+
+	Case 1.1: Score() - Max Values
+		Case 1.1: Passed
+------------------
+
+	Case 1.2: Score() Median Values
+		Case 1.2: Passed
+------------------
+
+	Case 1.3: Score() Min Values
+		Case 1.3: Passed
+------------------
+
+
+
+Unit Test Case 2: Class - HighScores; Function - newHighScore(int inputScore, string inputName)
+
+Case 2.1: newHighScore()
+		Case 2.1: Passed
+------------------
+
+
+
+Unit Test Case 3: Class - Encounter; Function - Mugging(int& money)
+
+	Case 3.1: Mugging() - Max value
+OH NO! Someone just robbed you in Shelby Center. You lose $3.00
+
+		Case 3.1: Passed
+------------------
+
+	Case 3.2: Mugging() - Median value
+OH NO! Someone just robbed you in Shelby Center. You lose $3.00
+
+		Case 3.2: Passed
+------------------
+
+
+
+Unit Test Case 4: Class - Encounter; Function - Lecture(int& intelligence, int& timer)
+
+	Case 4.1: Lecture() - Max values
+You must listen to a Discrete Structures lecture. You lose 3 intelligence and lose 3 seconds.
+
+		Case 4.1: Passed
+------------------
+
+	Case 4.2: Lecture() - Median values
+You must listen to a Discrete Structures lecture. You lose 3 intelligence and lose 3 seconds.
+
+		Case 4.2: Passed
+------------------
+
+
+
+Unit Test Case 5: Class - Encounter; Function - FindMoney(int& money, int& timer)
+
+	Case 5.1: FindMoney() - Max values
+Coins are all over the hallway, and you want lunch, and you're broke... So, you get $5.00 but lose 3 seconds
+
+		Case 5.1: Passed
+------------------
+
+	Case 5.2: FindMoney() - Median values
+Coins are all over the hallway, and you want lunch, and you're broke... So, you get $5.00 but lose 3 seconds
+
+		Case 5.2: Passed
+------------------
+
+	Case 5.3: FindMoney() - Min values
+Coins are all over the hallway, and you want lunch, and you're broke... So, you get $5.00 but lose 3 seconds
+
+		Case 5.3: Passed
+------------------
+
+
+
+Unit Test Case 6: Class - Encounter; Function - StudyGuide(int& intelligence)
+
+	Case 6.1: StudyGuide() - Max value
+Your professor posted a study guide with answers for an upcoming exam. Gain 5 intelligence
+
+		Case 6.1: Passed
+------------------
+
+	Case 6.2: StudyGuide() - Median value
+Your professor posted a study guide with answers for an upcoming exam. Gain 5 intelligence
+
+		Case 6.2: Passed
+------------------
+
+	Case 6.3: StudyGuide() - Min value
+Your professor posted a study guide with answers for an upcoming exam. Gain 5 intelligence
+
+		Case 6.3: Passed
+------------------
+
+
+
+Unit Test Case 7: Class - Encounter; Function - Random(int& money, int& intelligence, int& timer)
+
+	Case 7.1: Random() - Max valuesJust for kicks and giggles, you lose $6.00 and 5 intelligence and lose 3 seconds.
+
+		Case 7.1: Passed
+------------------
+
+	Case 7.2: Random() - Median valuesJust for kicks and giggles, you lose $6.00 and 5 intelligence and lose 3 seconds.
+
+		Case 7.2: Passed
+------------------
+
+
+
+Unit Test Case 8: Class - System; Function - ReadTechPapers(int& intelligence, int& timer)
+
+	Case 8.1: ReadTechPapers() - Max values
+You have gained 4 intelligence, but lose 3 seconds.
+
+		Case 8.1: Passed
+------------------
+
+	Case 8.2: ReadTechPapers() - Median values
+You have gained 4 intelligence, but lose 3 seconds.
+
+		Case 8.2: Passed
+------------------
+
+	Case 8.3: ReadTechPapers() - Min values
+You have gained 4 intelligence, but lose 3 seconds.
+
+		Case 8.3: Passed
+------------------
+
+
+
+Unit Test Case 9: Class - System; Function - Search(int& money, int& timer)
+
+	Case 9.1: Search() - Max values
+You have gained $4.00, but lose 3 seconds. You have gained money.
+
+		Case 9.1: Passed
+------------------
+
+	Case 9.2: Search() - Median values
+You have gained $4.00, but lose 3 seconds. You have gained money.
+
+		Case 9.2: Passed
+------------------
+
+	Case 9.3: Search() - Min values
+You have gained $4.00, but lose 3 seconds. You have gained money.
+
+		Case 9.3: Passed
+------------------
+
+
+
+Testing is complete...
