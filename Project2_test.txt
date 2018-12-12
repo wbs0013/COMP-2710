@@ -1,0 +1,245 @@
+Unit Test Cases [Words in quotes indicate user input]
+
+Unit Test Case 1: Class - Admin; Function - addStaff()
+
+   Case 1.1: addStaff()
+   
+      Adding a new branch staff member...
+      User Name: "xyz123"
+      Password: "1234"
+      Branch member added. Returning to menu.
+      
+   Case 1.1 Passed
+
+-------------
+
+Unit Test Case 2: Class - Admin; Function - deleteStaff()
+
+   Case 2.1: deleteStaff
+   
+      Delete a user - User name: "xyz123"
+      1) Confirm
+      2) Cancel
+      Please choose an option: "1"
+      User xyz123 was deleted!
+      Press any key to continue...
+      
+   Case 2.1 Passed 
+   -------------
+   Case 2.2: deleteStaff - User that doesn't exist
+   
+      Delete a user - User Name: "wbs0013"
+      1) Confirm
+      2) Cancel
+      Please choose an option: "1"
+      Warning - User wbs0013 is not in the system. No user is deleted!
+      
+   Case 2.2 Passed
+   
+-------------
+
+Unit Test Case 3: Class - Admin; Function - displayStaff()
+
+   Case 3.1: displayStaff - just admin  
+   
+      There are 1 users in the system.
+      1. User Name: admin     Role: System Administrator
+      Press any key to continue... 
+      
+   Case 3.1 Passed   
+   -------------   
+   Case 3.2: displayStaff - admin and 3 branch staff
+   
+      There are 4 users in the system.
+      1. User Name: admin     Role: System Administrator
+      2. User Name: xyz123    Role: Branch Staff
+      3. User Name: abc321    Role: Branch Staff
+      4. User Name: wbs0013   Role: Branch Staff
+      Press any key to continue...
+      
+   Case 3.2 Passed
+   
+-------------   
+
+Unit Test Case 4: Class - Admin; Function - changePassword()
+
+   Case 4.1: changePassword   
+   
+      Enter your user name: "admin"
+      Enter your old password: "0000"
+      
+      New Password: "1234" 
+      Password was changed!
+      
+   Case 4.1 Passed 
+   -------------
+   Case 4.2: changePassword
+   
+      Enter your user name: "admin"
+      Enter your old password: "0000"
+      
+      New Password: "0000" 
+      
+      Error - Your new password must be different from the old one!
+      
+   Case 4.2 Passed      
+   
+------------- 
+
+Unit Test Case 5: Class - Staff; Function - changePassword()
+
+   Case 5.1: changePassword
+   
+      Enter your user name: "xyz123"
+      Enter your old password: "1234"
+      
+      New Password: "0000"
+      Password was changed!
+      
+   Case 5.1 Passed 
+   -------------
+   Case 5.2: changePassword - same as old
+   
+      Enter your user name: "xyz123"
+      Enter your old password: "0000"
+      
+      New Password: "0000"
+      
+      Error - Your new password must be different from the old one!
+      
+   Case 5.2 Passed
+   
+-------------
+
+Unit Test Case 6: Class - Client; Function - addClient()
+
+   Case 6.1: addClient 
+   
+      A new client will be added:
+      Client Name: "Blake Schilleci"
+      Address: "340 North Donahue Dr #A202, Auburn, AL"
+      Social security number: "123456789"
+      Employer: "Auburn University"
+      Annual income: "3500"
+      A new client was added!
+      Press any key to continue...  
+      
+   Case 6.1 Passed
+   
+------------- 
+
+Unit Test Case 7: Class - Client; Function - addAccount()
+
+   Case 7.1: addAccount
+   
+      Choose a client: "Blake Schilleci"
+      A new account will be created for Blake Schilleci ...
+      Account Number: "12345"
+      Account Type: "Checking"
+      Balance: "750"
+      A new account was created for Blake Schilleci1
+      Press any key to continue...
+      
+   Case 7.1 Passed   
+   -------------   
+   Case 7.2: addAccount - non-existent client
+   
+      Choose a client: "Jackie Moon"
+      
+      Error - The client is not in the system.
+      1) Add Account
+      2) Return to client menu
+      Please choose an option:
+      
+   Case 7.2 Passed
+   
+-------------
+
+Unit Test Case 8: Class - Client; Function - editClient()
+
+   Case 8.1: editClient
+   
+      Choose a client: "Blake Schilleci"
+      Client Blake Schilleci's information will be updated ...
+      1) Confirm
+      2) Cancel
+      Please choose an option: "1"
+      
+      Address: "100 Samford Avenue, Auburn, AL"
+      Social Security number: "123123123"
+      Employer: "Auburn University"
+      Annual Income: "123456"
+      Client Blake Schilleci's information was updated!
+      Don't forget to save client info from the client menu!
+      Press any key to continue...  
+      
+   Case 8.1 Passed
+   ------------
+   Case 8.2: editClient - non-existent client
+   
+      Choose a client: "Jackie Moon"
+      Error - The client is not in the system.
+      Choose a client: 
+      
+   Case 8.2 Passed
+   
+------------ 
+
+Unit Test Case 9: Class - Client; Function - manageAccount()
+
+   Case 9.1: manageAccount - deposit
+   
+      Which account will be managed? "12345"
+      Manage account 12345 for Blake Schilleci
+      1) Deposit
+      2) Withdraw
+      3) Cancel
+      Please choose an option: "1"
+      Deposit Amount: "350"
+      Balance of account 12345 is: 1100 
+      Returning to client menu. Don't forget to save!
+      Press any key to continue...
+      
+   Case 9.1 Passed
+   ------------
+   Case 9.2 manageAccount - withdraw
+   
+      Which account will be managed? "12345"
+      Manage account 12345 for Blake Schilleci
+      1) Deposit
+      2) Withdraw
+      3) Cancel
+      Please choose an option: "2"
+      Withdraw Amount: "123"
+      Balance of account 12345 is: 977
+      Returning to client menu. Don't forget to save!
+      Press any key to continue...
+      
+   Case 9.2 Passed
+   ------------
+   Case 9.3 manageAccount - withdraw greater than balance
+   
+      Which account will be managed? "12345"
+      Manage account 12345 for Blake Schilleci
+      1) Deposit
+      2) Withdraw
+      3) Cancel
+      Please choose an option: "2"
+      Withdraw Amount: "10000"
+      Your withdrawl cannot be more then your balance, which is 977
+      Please try again!
+      Which account will be managed?
+      
+   Case 9.3 Passed   
+   ------------
+   Case 9.4 manageAccount - non-existent account
+   
+      Which account will be managed? "123"
+      Error - Account 123 is not in the system!
+      1) Manage an account
+      2) Cancel
+      Please choose an option:
+      
+   Case 9.4 Passed
+   
+------------                                             
